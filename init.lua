@@ -13,6 +13,9 @@ if not vim.loop.fs_stat(lazypath) then
 		lazypath,
 	})
 end
+
+vim.o.guifont = "JetBrainsMonoNL Nerd Font Mono:h16" 
+
 vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = require("custom_keys").leader
